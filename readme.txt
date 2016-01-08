@@ -31,6 +31,10 @@ $TCA['tt_content']['columns']['tx_almiconfields_icon']['config']['wizards']['ico
 
 ?>
 
+Path to icon font can be 'EXT, for example:
+'iconFont' => 'EXT:provider_extension/Resources/Public/Fonts/font_awesome/css/font-awesome.min.css',
+'iconList' => 'EXT:provider_extension/Resources/Public/Fonts/font_awesome/iconlist.txt'
+
 
 
 
