@@ -1,7 +1,5 @@
 <?php
-if (!defined('TYPO3_MODE')) {
-	die('Access denied.');
-}
+defined('TYPO3_MODE') || die();
 
 $tempColumns = array(
 	'tx_almiconfields_icon' => array(
@@ -36,8 +34,5 @@ $tempColumns = array(
     ),
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $tempColumns, 1);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'tx_almiconfields_icon', '1,3,4', 'after:subtitle');
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns, 1);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tt_content', 'tx_almiconfields_icon', '', 'after:header_position');
