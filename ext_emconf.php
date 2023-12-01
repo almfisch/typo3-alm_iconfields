@@ -24,13 +24,11 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '0.3.0',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '7.6.0-11.5.99',
-			'alm_iconpicker' => '',
+			'typo3' => '7.6.0-12.4.99',
 		),
 		'conflicts' => array(
 		),
 		'suggests' => array(
-			'flux' => '',
 		),
 	),
 );

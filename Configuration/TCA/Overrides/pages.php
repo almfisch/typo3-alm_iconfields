@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();
 
 $tempColumns = array(
 	'tx_almiconfields_icon' => array(
@@ -10,11 +10,13 @@ $tempColumns = array(
 			'size' => '20',
 			'max' => '255',
 			'eval' => 'trim',
+			/*
 			'fieldControl' => array(
 				'iconpickerController' => array(
 					'renderType' => 'iconpickerController'
 				),
 			),
+			*/
 		)
 	),
 );

@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();
 
 $tempColumns = array(
 	'tx_almiconfields_icon' => array(
@@ -10,14 +10,16 @@ $tempColumns = array(
 			'size' => '20',
 			'max' => '255',
 			'eval' => 'trim',
+			/*
 			'fieldControl' => array(
 				'iconpickerController' => array(
 					'renderType' => 'iconpickerController'
 				),
 			),
+			*/
 		)
 	),
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tt_content', 'tx_almiconfields_icon', '', 'after:header_position');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette('tt_content', 'headers', '--linebreak--, tx_almiconfields_icon', 'after:subheader');

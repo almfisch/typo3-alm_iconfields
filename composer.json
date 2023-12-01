@@ -1,0 +1,13 @@
+{
+    "name": "alm/alm-iconfields",
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "alm_iconfields"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Alm\\AlmIconfields\\": "Classes/"
+        }
+    }
+}
